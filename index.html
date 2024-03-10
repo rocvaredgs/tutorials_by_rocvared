@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гайд по установке всех версий Windows</title>
+<link href="bootstrap/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+    <h1>Гайд по установке всех версий Windows</h1>
+    <div class="dropdown">
+        <a class="version-link" href="#">Выберите версию Windows</a>
+        <div class="dropdown-content" id="dropdown">
+            <a href="#" onclick="showContent('win3.11')">Windows 3.11</a>
+            <a href="#" onclick="showContent('win95')">Windows 95</a>
+            <a href="#" onclick="showContent('winXP')">Windows XP</a>
+            <a href="#" onclick="showContent('win7')">Windows 7</a>
+            <a href="#" onclick="showContent('win10')">Windows 10</a>
+            <a href="#" onclick="showContent('win11')">Windows 11</a>
+        </div>
+    </div>
+    <div class="content" id="win3.11-content">
+        <h1>Установка Windows 3.11 на VMware</h1>
+<h2>Загрузить Windows 3.11 можно по этой ссылке: <a href="https://archive.org/download/windows_3.11_en-de-ru-tr_with_ms-dos_6.22_eng./Windows%203.11%20Russian.iso">тык</a></h2>
+  <h2>Шаг 1: Установка VMware</h2>
+  <p>Скачайте и установите программу VMware на свой компьютер. Вы можете найти её на официальном сайте VMware.</p>
+  <img src="vmware.jpg" alt="Скачать и установить VMware">
+
+  <h2>Шаг 2: Создание новой виртуальной машины</h2>
+  <p>Нажмите на кнопку "Create New Virtual Machine" (Создать новую виртуальную машину) в главном окне VMware.</p>
+  <img src="create_vm.png" alt="Создание новой виртуальной машины">
+
+  <h2>Шаг 3: Настройка ресурсов виртуальной машины</h2>
+  <p>Установите количество оперативной памяти, которое хотите выделить для виртуальной машины.</p>
+  <p>Выберите опцию "Use bridged networking" (Использовать мостовое соединение) для доступа к сети.</p>
+  <img src="https://miggim.ru/wp-content/uploads/0/f/4/0f41c55f33b58334a70a0e074da844ff.jpeg" alt="Настройка ресурсов виртуальной машины">
+
+  <h2>Шаг 4: Установка Windows 3.11</h2>
+  <p>Запустите виртуальную машину, выбрав созданную вами виртуальную машину и нажав на кнопку "Power on this virtual machine" (Включить эту виртуальную машину).</p>
+  <img src="https://myeditor.ru/wp-content/uploads/9/f/5/9f549855c418b580b1f2466784116015.png" alt="Запуск виртуальной машины">
+  
+  <p>Вставьте установочный диск Windows 3.11 в виртуальный CD/DVD-привод.</p>
+    </div>
+    <div class="content" id="win95-content">
+        <p>Здесь будет информация о Windows 95</p>
+    </div>
+    <div class="content" id="winXP-content">
+        <p>Здесь будет информация о Windows XP</p>
+    </div>
+    <div class="content" id="win7-content">
+        <p>Здесь будет информация о Windows 7</p>
+    </div>
+    <div class="content" id="win10-content">
+        <p>Здесь будет информация о Windows 10</p>
+    </div>
+    <div class="content" id="win11-content">
+        <p>Здесь будет информация о Windows 11</p>
+    </div>
+</div>
+<button class="toggle-button" onclick="toggleDarkMode()">
+    <img id="theme-icon" src="sun.png" alt="sun">
+</button>
+
+<script type="text/javascript" src="bootstrap/bootstrap.js" ></script>
+
+</body>
+</html>
